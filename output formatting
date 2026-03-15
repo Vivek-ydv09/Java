@@ -1,0 +1,30 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+            Scanner sc=new Scanner(System.in);
+            System.out.println("================================");
+            for(int i=0;i<3;i++){
+                String s1=sc.next();
+                
+                int x=sc.nextInt();
+                if(x<10)
+                {
+                    System.out.println(s1+" ".repeat(15-s1.length())+"00"+x);
+                }
+                if(10<=x&&x<100)
+                {
+                    System.out.println(s1+" ".repeat(15-s1.length())+"0"+x);
+                }
+                if(x>=100)
+                {
+                    System.out.println(s1+" ".repeat(15-s1.length())+x);
+                }
+                //Complete this line
+            }
+            System.out.println("================================");
+
+    }
+}
